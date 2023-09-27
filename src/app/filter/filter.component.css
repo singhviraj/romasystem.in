@@ -1,0 +1,11 @@
+.filter-container{
+    margin: 10px  10px;   
+    border:solid black;
+    float:right;
+    /* float:right;*/ 
+}
+
+input{
+margin-left:50px;
+
+}

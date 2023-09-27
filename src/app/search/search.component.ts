@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { elementAt } from 'rxjs';
 
 @Component({
@@ -10,7 +10,10 @@ export class SearchComponent {
 
   searchvalue:string = '' ;
 
-  inputfunction(element : any){
-this.searchvalue = (<HTMLInputElement>element.target).value;
-  }
+@Output() searchtextvalue: EventEmitter<string> = new EventEmitter<string>();
+
+onsearchtextchange(){
+  
+  this.searchtextvalue.emit(this.searchvalue);
+}
 }

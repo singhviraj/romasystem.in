@@ -1,0 +1,56 @@
+<app-filter [total] ='gettotalproducts()'
+[avail] ='getavailableproducts()'
+[unavail] ='getnonavailableproducts()' 
+#filter
+>
+</app-filter>
+
+<app-search (searchtextvalue) = "aftersearchtext($event)">
+    
+</app-search>
+
+
+<div>
+ <div style ="float:left">
+    <div *ngFor ="let p of products;let i = index">
+     <div *ngIf="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)"> 
+         <div *ngIf="filter.selectedradiobutton === 'All'  ||  filter.selectedradiobutton === p.available">
+            {{i}}
+            <div class = "product-container" [ngStyle] ="{backgroundColor: p.available === 'Available' ? 'lightpink' :'orange'}">
+                <div class ="image-container"><img [src]="p.image" style ="max-height:50px; max-width: 50px"></div>
+        <div>
+        
+        <div class="name-container"><h5>{{p.name}}</h5></div>
+        <div class="detailcontainer">
+            <div class="details" [ngStyle] ="{color:p.available ===  'Available' ? 'blue' :'red'}"> {{p.available}}</div>
+            <div class="details"> Price: {{p.price}}</div>
+            <div class="details"> Color:{{p.color}}</div>
+        </div>
+        </div>
+        
+        
+        <div class="options">
+            <button class="btn btn-success"> show details</button>
+            <button class="btn btn-warning" *ngIf="p.available ==='Available';else notify" >buy now</button>
+            <ng-template #notify>
+                <button class="btn btn-warning"> notify</button>
+            </ng-template>
+        </div>
+        </div>
+           
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div style="float:right">
+        <img src="assets/smartring.webp"  style="height:500px;width:500px">
+    </div>
+    
+
+    
+    
+
+  
+   

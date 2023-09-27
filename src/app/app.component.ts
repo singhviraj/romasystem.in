@@ -8,3 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angularproject';
 }
+
+
+
+//https://github.com/manojjha86/complete-angular-13-course/tree/main/angular-component/src/app

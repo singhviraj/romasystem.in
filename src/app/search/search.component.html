@@ -1,5 +1,7 @@
-<div class="search-div">
+<div class="search-div" [ngClass] ="{changebackground: searchvalue!= ''}">
     Search:
 <!--<input type="text" (input) = "inputfunction($eventdata)"> -->    
-<input type="text" [(ngModel)]= "searchvalue">
-Just to confirm , did you searched for {{searchvalue}}</div>
+<input type="text" [(ngModel)]= "searchvalue" (input) ="onsearchtextchange()">
+Just to confirm , did you searched for {{searchvalue}}
+
+</div>
