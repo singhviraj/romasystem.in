@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild ,AfterViewChecked,ElementRef, AfterContentInit ,DoCheck} from '@angular/core';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-container',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent {
-
+  //checknavvalue:string= 'hey';
+  //@ViewChild('navigation') someinput !: NavComponent;
+  //ngAfterViewChecked(){
+ //   console.log(this.checknavvalue);
+ //   this.checknavvalue = this.someinput.clickedvalue;
+   // console.log(this.checknavvalue);
+ // }
+    
+    
+  
+  
+  
 }

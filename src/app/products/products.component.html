@@ -6,7 +6,9 @@
 </app-filter>
 
 <app-search (searchtextvalue) = "aftersearchtext($event)">
-    
+    <div *ngIf="searchtext != ''">
+        Just to confirm did you searched for {{searchtext}}
+    </div>
 </app-search>
 
 

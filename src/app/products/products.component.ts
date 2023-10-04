@@ -32,9 +32,10 @@ productscount:string='All'
  //console.log(data);
 
 //}
+
 searchtext:string ='';
 aftersearchtext(data :string){
 this.searchtext =data;
-console.log(data);
+
 }
 }

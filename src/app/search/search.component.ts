@@ -8,7 +8,7 @@ import { elementAt } from 'rxjs';
 })
 export class SearchComponent {
 
-  searchvalue:string = '' ;
+ searchvalue:string = '' ;
 
 @Output() searchtextvalue: EventEmitter<string> = new EventEmitter<string>();
 

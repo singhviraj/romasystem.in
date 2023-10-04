@@ -11,6 +11,8 @@ import { NotificationComponent } from './notification/notification.component';
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
 import { FilterComponent } from './filter/filter.component';
+import { AboutComponent } from './about/about.component';
+import { BackgroundDirective } from './background.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FilterComponent } from './filter/filter.component';
     NotificationComponent,
     SearchComponent,
     ProductsComponent,
-    FilterComponent
+    FilterComponent,
+    AboutComponent,
+    BackgroundDirective
   ],
   imports: [
     BrowserModule,FormsModule

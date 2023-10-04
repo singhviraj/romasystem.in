@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,AfterContentChecked,ViewChild,OnInit } from '@angular/core';
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-nav',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+//clickedvalue:string = 'false';
+@ViewChild('about') someinput !: AboutComponent;
+
+aboutus(){
+  this.someinput.showabout ='true';
+  //this.clickedvalue = 'true'; 
 
 }
+
+    
+  }

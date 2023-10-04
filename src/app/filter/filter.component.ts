@@ -1,4 +1,4 @@
-import { Component ,ElementRef,EventEmitter,Input, Output ,ViewChild} from '@angular/core';
+import {  Component ,EventEmitter,Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -18,9 +18,7 @@ onselect(eventdata :any){
 
 }
 selectedradiobutton :string='All';
-selectedradiobutton2:string ='All';
 
- 
 //@Output() onChange(eventdata : any){
 //return eventdata;
 
