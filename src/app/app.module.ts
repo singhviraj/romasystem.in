@@ -13,6 +13,10 @@ import { ProductsComponent } from './products/products.component';
 import { FilterComponent } from './filter/filter.component';
 import { AboutComponent } from './about/about.component';
 import { BackgroundDirective } from './background.directive';
+import { MouseoverDirective } from './mouseover.directive';
+import { ClassDirective } from './class.directive';
+import { FlipDirective } from './flip.directive';
+import { IfDirective } from './if.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { BackgroundDirective } from './background.directive';
     ProductsComponent,
     FilterComponent,
     AboutComponent,
-    BackgroundDirective
+    BackgroundDirective,
+    MouseoverDirective,
+    ClassDirective,
+    FlipDirective,
+    IfDirective
   ],
   imports: [
     BrowserModule,FormsModule

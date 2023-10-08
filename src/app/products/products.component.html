@@ -30,10 +30,11 @@
         </div>
         </div>
         
-        
         <div class="options">
             <button class="btn btn-success"> show details</button>
+           
             <button class="btn btn-warning" *ngIf="p.available ==='Available';else notify" >buy now</button>
+                     
             <ng-template #notify>
                 <button class="btn btn-warning"> notify</button>
             </ng-template>
@@ -45,14 +46,14 @@
     </div>
     </div>
 
-
-    <div style="float:right">
+    <div style="float:right"  [appClass] ="{zoomtransition : checktrue ,'zoomtransition:hover':checktrue}">
+       <div [appFlip] ="{x:true}">
+        <img src="assets/leftarrow.webp"  style="height:50px;width:50px">
+       </div> 
         <img src="assets/smartring.webp"  style="height:500px;width:500px">
     </div>
     
 
-    
-    
 
   
    

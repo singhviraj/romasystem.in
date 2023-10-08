@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
   i:number=0;
+
+  checktrue:boolean=true;
+  
+  
 products =[
   {id:1 ,name:"google lens" ,price:'1109rs' ,color:"black",available:'Available', image:'assets/Googlelens.jpg'},
   {id:2 ,name:"smart watch" ,price:'3456rs' ,color:"white",available:'Available', image:'assets/smartwatch.jpg'},
@@ -38,4 +42,6 @@ aftersearchtext(data :string){
 this.searchtext =data;
 
 }
+
+
 }

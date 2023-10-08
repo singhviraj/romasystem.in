@@ -1,5 +1,5 @@
-<div *ngIf="showabout==='true'">
-   <div appBackground>
+<div *ngIf="showabout==='true'" >
+   <div appBackground opa  >
    <h1> THIS UTTRAKHAND-BASED STARTUP IS USING WEARABLE TECH TO TRANSFORM MUSCULOSKELETAL HEALTHCARE </h1>
 <h4>
    Uttrakhand-based startup Healthtech recently launched many devices, which measures muscle strength much
@@ -10,3 +10,25 @@
     </div>
 
 </div>    
+
+<h4>
+   Kindly choose any one problems from the below so that we can suggest the sensors you should look in your
+   wearable devicde
+</h4>
+
+<div class="alignsensors">
+   <input type="radio" name="wear" value="Accelerometer" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in standing up
+<input type="radio" name="wear" value="Gyroscopes" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in rotating
+<input type="radio" name="wear" value="Magnetometers" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in movement
+<input type="radio" name="wear" value="Pedometers" [ngModel] ="sensoroption" (click) ='onselect($event)'> lack stamina
+<input type="radio" name="wear" value="Pressure sensors" [ngModel] ="sensoroption" (click) ='onselect($event)'> do not feel strength while
+holding
+</div>   
+
+<div [ngSwitch] ='sensoroption'>
+<p *ngSwitchCase ="'Accelerometer'">{{sensoroption}}</p> 
+<p *ngSwitchCase ="'Gyroscopes'">{{sensoroption}}</p> 
+<p *ngSwitchCase ="'Magnetometers'">{{sensoroption}}</p> 
+<p *ngSwitchCase ="'Pedometers'">{{sensoroption}}</p> 
+<p *ngSwitchCase ="'Pressure sensors'">{{sensoroption}}</p> 
+</div>

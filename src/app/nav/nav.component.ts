@@ -1,4 +1,4 @@
-import { Component,AfterContentChecked,ViewChild,OnInit } from '@angular/core';
+import { Component,AfterContentChecked,ViewChild,OnInit, HostBinding } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 
 @Component({
@@ -7,7 +7,7 @@ import { AboutComponent } from '../about/about.component';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-//clickedvalue:string = 'false';
+
 @ViewChild('about') someinput !: AboutComponent;
 
 aboutus(){
@@ -16,5 +16,4 @@ aboutus(){
 
 }
 
-    
-  }
+}

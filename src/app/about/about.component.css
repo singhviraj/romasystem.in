@@ -1,5 +1,6 @@
 div{
     margin-top: 10px;
+    
 }
 h1{
     color:brown;
@@ -9,3 +10,7 @@ h4{
 }
 
 
+.alignsensors{
+    display:flex;
+     opacity: 1.0; 
+}
