@@ -16,7 +16,8 @@
    wearable devicde
 </h4>
 
-<div class="alignsensors">
+
+<div class="alignsensors" >
    <input type="radio" name="wear" value="Accelerometer" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in standing up
 <input type="radio" name="wear" value="Gyroscopes" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in rotating
 <input type="radio" name="wear" value="Magnetometers" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in movement
@@ -32,3 +33,4 @@ holding
 <p *ngSwitchCase ="'Pedometers'">{{sensoroption}}</p> 
 <p *ngSwitchCase ="'Pressure sensors'">{{sensoroption}}</p> 
 </div>
+

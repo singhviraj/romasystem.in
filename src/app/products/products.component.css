@@ -58,3 +58,7 @@ width:140px
   transform: scaleX(-1);
 }
 
+.somespace{
+    margin-top: 15px;
+    margin-left: 850px;
+}

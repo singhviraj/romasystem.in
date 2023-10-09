@@ -15,7 +15,7 @@ onselect(eventname :any){
   this.sensoroption = eventname.target.value;
 }
 
-@HostBinding('style.opacity') opa:number=0.6;
+@HostBinding('style.opacity') opa:number=0.8;
 
 }
 

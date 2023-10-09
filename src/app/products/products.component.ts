@@ -10,7 +10,12 @@ export class ProductsComponent {
 
   checktrue:boolean=true;
   
-  
+  showimageproductvalue:boolean=false;
+
+  showimageproduct(){
+    this.showimageproductvalue=true;
+  }
+
 products =[
   {id:1 ,name:"google lens" ,price:'1109rs' ,color:"black",available:'Available', image:'assets/Googlelens.jpg'},
   {id:2 ,name:"smart watch" ,price:'3456rs' ,color:"white",available:'Available', image:'assets/smartwatch.jpg'},
