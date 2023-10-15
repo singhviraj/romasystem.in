@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     background-color: cyan;
-}
+ }
 .site-name{
     padding:5px 30px;
     color: black;

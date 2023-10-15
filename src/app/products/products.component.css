@@ -62,3 +62,9 @@ width:140px
     margin-top: 15px;
     margin-left: 850px;
 }
+
+.scroll{
+    height:400px;
+    overflow-y: scroll;
+}
+

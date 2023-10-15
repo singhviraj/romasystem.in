@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { Routes ,RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,6 +18,14 @@ import { MouseoverDirective } from './mouseover.directive';
 import { ClassDirective } from './class.directive';
 import { FlipDirective } from './flip.directive';
 import { IfDirective } from './if.directive';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+
+
+const approute: Routes=[
+  
+  {path:'Products',component:ProductsComponent},
+  {path:'Productdetails/:id',component:ProductdetailsComponent},
+]
 
 @NgModule({
   declarations: [
@@ -33,12 +42,17 @@ import { IfDirective } from './if.directive';
     MouseoverDirective,
     ClassDirective,
     FlipDirective,
-    IfDirective
+    IfDirective,
+    ProductdetailsComponent,
+
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,RouterModule.forRoot(approute)
   ],
+    
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
