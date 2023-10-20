@@ -1,0 +1,55 @@
+<!--<form (submit) ="onsubmit()" >
+    <label for="firstname">First name: </label>
+    <input type="text" name="firstname" ngModel >
+    <br>
+    <label for="lastname">Last name: </label>
+    <input type="text" name="lastname"  ngModel >
+    <br>
+    <label for="email">email: </label>
+    <input type="email" name="email" ngModel >
+    <br>
+    <label for="password">password: </label>
+    <input type="password" name="password" ngModel >
+    <br>
+    <button type="submit" value="submit">click me</button>
+
+    </form>-->
+
+    <form (ngSubmit) ="onsubmit(myform)" #myform ="ngForm">
+
+        <div ngModelGroup="personaldetails" #personaldetails="ngModelGroup">
+        
+            <label for="firstname">name: </label>
+    <input type="text" name="firstname" ngModel required #fname="ngModel">
+     
+    <br>
+    <label for="email">email: </label>
+    <input type="email" name="email" ngModel required #ename="ngModel">
+   
+    <br>
+    <label for="contacttype"> Kindly choose the purpose to contact</label>
+    <input type="radio" value="customercare" name="contacttype" [(ngModel)]="selectedchoice" required>
+    <label for="customercare"> customercare</label>
+    <input type="radio" value="partner" name="contacttype" [(ngModel)]="selectedchoice" required>
+    <label for="partner"> partner</label>
+    <br>
+
+    <label for="message">Message: </label>
+    <input type="text" name="query" [(ngModel)] ="message" required #qname="ngModel">
+
+    <div>
+        <small *ngIf="personaldetails.invalid && personaldetails.touched">name,email and choice
+            are required</small>
+    </div>
+    
+</div>
+    <!--<label for="password">password: </label>
+    <input type="password" name="password" ngModel required #pname="ngModel">
+    <small *ngIf="pname.invalid && pname.touched">password is required</small>-->
+    
+    <br>
+   <button type="submit" value="submit" [disabled]="!myform.valid">click me</button>
+
+    </form>
+
+    

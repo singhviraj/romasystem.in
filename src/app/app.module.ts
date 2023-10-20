@@ -1,6 +1,6 @@
 
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { Routes ,RouterModule } from '@angular/router';
 
@@ -19,6 +19,7 @@ import { ClassDirective } from './class.directive';
 import { FlipDirective } from './flip.directive';
 import { IfDirective } from './if.directive';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { FormComponent } from './form/form.component';
 
 
 const approute: Routes=[
@@ -44,10 +45,11 @@ const approute: Routes=[
     FlipDirective,
     IfDirective,
     ProductdetailsComponent,
+    FormComponent,
 
   ],
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot(approute)
+    BrowserModule,FormsModule,RouterModule.forRoot(approute),ReactiveFormsModule
   ],
     
   providers: [],
