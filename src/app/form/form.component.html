@@ -26,12 +26,12 @@
 
         <div ngModelGroup="personaldetails" #personaldetails="ngModelGroup">
         
-            <label for="firstname">name: </label>
+            <label for="firstname">Name: </label>
             <br>
     <input type="text" name="firstname" ngModel required #fname="ngModel">
      
     <br>
-    <label for="email">email: </label>
+    <label for="email">Email: </label>
     <br>
     <input type="email" name="email" ngModel required #ename="ngModel">
    
@@ -39,9 +39,9 @@
     <label for="contacttype"> Choose the following</label>
     <br>
     <input type="radio" value="customercare" name="contacttype" [(ngModel)]="selectedchoice" required>
-    <label for="customercare"> customercare</label>
+    <label for="customercare"> Customer Care</label>
     <input type="radio" value="partner" name="contacttype" [(ngModel)]="selectedchoice" required>
-    <label for="partner"> partner</label>
+    <label for="partner"> Partner</label>
     <br>
 
     <label for="message">Message: </label>
@@ -49,7 +49,7 @@
     <!--<input type="text" name="query" [(ngModel)] ="message" required #qname="ngModel">-->
     
     <textarea  name="query" rows="4" cols="50" [(ngModel)] ="message" required #qname="ngModel"
-    >enter message</textarea>
+    >Enter message</textarea>
     <div>
         <small *ngIf="personaldetails.invalid && personaldetails.touched">name,email and choice
             are required</small>
