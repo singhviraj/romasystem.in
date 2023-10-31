@@ -14,6 +14,8 @@ export class FormComponent {
   selectedchoice:string='';
 
   message:string='';
+
+  showformstatus:boolean=false;
   async onsubmit(formdata: NgForm){
 
 console.log(formdata);
@@ -27,7 +29,7 @@ let respone =await emailjs.send("service_9axa3hk","template_kj1a0cj",{
   from_id: "gviraj347@gmail.com",
   });
  console.log("submitted");
- 
+ this.showformstatus=true;
 formdata.reset();
 //async onsubmit(){
  // emailjs.init("8rBqRwH7jBJwVJMYK");
