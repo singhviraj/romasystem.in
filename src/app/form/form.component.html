@@ -15,19 +15,29 @@
 
     </form>-->
 
+
+
+
+
+<div class="form">
+    <h2>Let's Talk</h2>
+    <br>
     <form (ngSubmit) ="onsubmit(myform)" #myform ="ngForm">
 
         <div ngModelGroup="personaldetails" #personaldetails="ngModelGroup">
         
             <label for="firstname">name: </label>
+            <br>
     <input type="text" name="firstname" ngModel required #fname="ngModel">
      
     <br>
     <label for="email">email: </label>
+    <br>
     <input type="email" name="email" ngModel required #ename="ngModel">
    
     <br>
-    <label for="contacttype"> Kindly choose the purpose to contact</label>
+    <label for="contacttype"> Choose the following</label>
+    <br>
     <input type="radio" value="customercare" name="contacttype" [(ngModel)]="selectedchoice" required>
     <label for="customercare"> customercare</label>
     <input type="radio" value="partner" name="contacttype" [(ngModel)]="selectedchoice" required>
@@ -35,8 +45,11 @@
     <br>
 
     <label for="message">Message: </label>
-    <input type="text" name="query" [(ngModel)] ="message" required #qname="ngModel">
-
+    <br>
+    <!--<input type="text" name="query" [(ngModel)] ="message" required #qname="ngModel">-->
+    
+    <textarea  name="query" rows="4" cols="50" [(ngModel)] ="message" required #qname="ngModel"
+    >enter message</textarea>
     <div>
         <small *ngIf="personaldetails.invalid && personaldetails.touched">name,email and choice
             are required</small>
@@ -45,11 +58,22 @@
 </div>
     <!--<label for="password">password: </label>
     <input type="password" name="password" ngModel required #pname="ngModel">
-    <small *ngIf="pname.invalid && pname.touched">password is required</small>-->
-    
+    <small *ngIf="pname.invalid && pname.touched">password is required</small>
+
     <br>
-   <button type="submit" value="submit" [disabled]="!myform.valid">click me</button>
-
-    </form>
-
+      <input type="button" value="submit" [disabled]="!myform.valid">
+<br>
+<button type="submit" value="submit" [disabled]="!myform.valid">click me</button>-->
     
+<br>
+<button type="submit" value="submit" [disabled]="!myform.valid">click me</button>
+    
+    </form>
+</div>
+
+
+
+
+<!--
+<app-googlemap></app-googlemap>
+-->

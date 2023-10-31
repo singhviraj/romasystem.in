@@ -1,15 +1,17 @@
-<div *ngIf="showabout==='true'" >
-   <div appBackground opa  >
-   <h1> THIS UTTRAKHAND-BASED STARTUP IS USING WEARABLE TECH TO TRANSFORM MUSCULOSKELETAL HEALTHCARE </h1>
-<h4>
-   Uttrakhand-based startup Healthtech recently launched many devices, which measures muscle strength much
-   more accurately than traditional methods. The device, which has completed clinical trials, can help 
-   diagnose and treat musculoskeletal or sports injuries.
-   
-</h4>
-    </div>
+<!--<div *ngIf="showabout==='true'" >-->
+   <!--
+<div>
+   <div appBackground opa>
+      <h1> THIS UTTRAKHAND-BASED STARTUP IS USING WEARABLE TECH TO TRANSFORM MUSCULOSKELETAL HEALTHCARE </h1>
+      <h4>
+         Uttrakhand-based startup Healthtech recently launched many devices, which measures muscle strength much
+         more accurately than traditional methods. The device, which has completed clinical trials, can help
+         diagnose and treat musculoskeletal or sports injuries.
 
-</div>    
+      </h4>
+   </div>
+
+</div>
 
 <h4>
    Kindly choose any one problems from the below so that we can suggest the sensors you should look in your
@@ -17,20 +19,76 @@
 </h4>
 
 
-<div class="alignsensors" >
-   <input type="radio" name="wear" value="Accelerometer" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in standing up
-<input type="radio" name="wear" value="Gyroscopes" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in rotating
-<input type="radio" name="wear" value="Magnetometers" [ngModel] ="sensoroption" (click) ='onselect($event)'> face issue in movement
-<input type="radio" name="wear" value="Pedometers" [ngModel] ="sensoroption" (click) ='onselect($event)'> lack stamina
-<input type="radio" name="wear" value="Pressure sensors" [ngModel] ="sensoroption" (click) ='onselect($event)'> do not feel strength while
-holding
-</div>   
-
-<div [ngSwitch] ='sensoroption'>
-<p *ngSwitchCase ="'Accelerometer'">{{sensoroption}}</p> 
-<p *ngSwitchCase ="'Gyroscopes'">{{sensoroption}}</p> 
-<p *ngSwitchCase ="'Magnetometers'">{{sensoroption}}</p> 
-<p *ngSwitchCase ="'Pedometers'">{{sensoroption}}</p> 
-<p *ngSwitchCase ="'Pressure sensors'">{{sensoroption}}</p> 
+<div class="alignsensors">
+   <input type="radio" name="wear" value="Accelerometer" [ngModel]="sensoroption" (click)='onselect($event)'> face issue
+   in standing up
+   <input type="radio" name="wear" value="Gyroscopes" [ngModel]="sensoroption" (click)='onselect($event)'> face issue in
+   rotating
+   <input type="radio" name="wear" value="Magnetometers" [ngModel]="sensoroption" (click)='onselect($event)'> face issue
+   in movement
+   <input type="radio" name="wear" value="Pedometers" [ngModel]="sensoroption" (click)='onselect($event)'> lack stamina
+   <input type="radio" name="wear" value="Pressure sensors" [ngModel]="sensoroption" (click)='onselect($event)'> do not
+   feel strength while
+   holding
 </div>
+
+<div [ngSwitch]='sensoroption'>
+   <p *ngSwitchCase="'Accelerometer'">{{sensoroption}}</p>
+   <p *ngSwitchCase="'Gyroscopes'">{{sensoroption}}</p>
+   <p *ngSwitchCase="'Magnetometers'">{{sensoroption}}</p>
+   <p *ngSwitchCase="'Pedometers'">{{sensoroption}}</p>
+   <p *ngSwitchCase="'Pressure sensors'">{{sensoroption}}</p>
+</div>
+
+-->
+
+
+
+
+
+<!--<div class="mainimage"> <img src="assets/indianflag.jpg" ></div>-->
+
+<div class="container">
+   <div class="wrapper">
+       <img src="assets/makeinIndiaabout.jpg">
+       <img src="assets/romasystemhome1.jpg">
+      
+
+       
+   </div>
+</div>
+<br>
+<h4 appBackground>About Us</h4>
+<br>
+<h5>With the aim of Make in India, we want to deliver our products throughout the world. We, at ROMA SYSTEM, believe in enhancing the quality of our customers 
+   as well as our employees through everything that we do. 
+   Our aim is to deliver innovative products in a pocket-friendly way. Roma system became the first FMEG(Fast moving electrical goods) company which ensures 
+   replacement of electrical products rather than ‘rectifying’ it. Our products are highly appreciated for features like rugged construction, hassle free performance,
+    easy installation, energy efficiency and 
+   longer service life. Further, these products are available in various technical specifications in order to meet different requirements of clients.</h5>
+<br>
+<h4 appBackground>Contribution towards society as a socially aware corporate citizen</h4>
+<br>
+<h5>Social and environmental responsibility has been at the forefront of Roma system operating Philosophy and as a result the company consistently contributes to socially responsible activities.
+    For instance, Our company manufactures BLDC(Brushless direct current) fans which uses low energy to run. </h5>
+<br>
+    <h3 appBackground>Founders</h3>
+<br>
+
+
+
+<div class="mainposition">
+   <div class="displayleft">
+      <img src="assets/leftarrow.webp"  >  
+    </div>
+   <div class="displayright" >
+      <h4>
+         Uttrakhand-based startup Healthtech recently launched many devices, which measures muscle strength much
+         more accurately than traditional methods. The device, which has completed clinical trials, can help
+         diagnose and treat musculoskeletal or sports injuries.
+
+      </h4>
+   </div>
+</div>
+
 

@@ -12,10 +12,29 @@ export class ProductsComponent {
   
   showimageproductvalue:boolean=false;
 
+  shownotification:boolean=false;
+
+  selectedname:string='';
+  
   showimageproduct(){
     this.showimageproductvalue=true;
+    
   }
 
+  
+  showappnotification(eventd:any){
+    this.shownotification =true;
+    console.log(this.selectedname);
+   console.log(eventd.target.placeholder);
+    this.selectedname=eventd.target.placeholder;
+   console.log(this.selectedname);
+   console.log(eventd.target.value);
+
+  }
+
+  donotshowappnotification(eventdn:any){
+    this.shownotification =false;
+  }
 products =[
   {id:1 ,name:"google lens" ,price:'1109rs' ,color:"black",available:'Available', image:'assets/Googlelens.jpg'},
   {id:2 ,name:"smart watch" ,price:'3456rs' ,color:"white",available:'Available', image:'assets/smartwatch.jpg'},

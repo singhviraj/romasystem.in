@@ -3,6 +3,7 @@
     margin:15px 0px;
     padding: 5px 5px;
     border-radius:5px;
+   
 }
 
 .image-container{
@@ -12,7 +13,6 @@
 }
 
 .detailcontainer{
-    display:flex;
     margin:0px 20px;
 }
 .name-container{
@@ -33,15 +33,42 @@ width:140px
     font-size:10px;
     margin:0px 5px;
     padding:2px 10 px;
+   
 }
+
+@media(min-width : 600px){
+    .detailcontainer{
+        display:flex; 
+         margin:0px 20px;
+     }
+}
+
+input[type=button]{
+    height:60px;
+    width:140px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media(max-width : 600px){
+    input[type=button]{
+        height:60px;
+        width: 80px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+
  /* .adjustsecondimage{
     float: right;
     height: 350px;
     width: 350px;
-    
+    background-color:#615192;
 }*/
 
 
+/*
 .zoomtransition{
     width: 50px;
   height: 100px;
@@ -68,3 +95,4 @@ width:140px
     overflow-y: scroll;
 }
 
+*/

@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-slogan: string = " We have every wearable devices for your needs";
-source: string = "assets/wearables.jpg" ;
-sloganf(){
-  return'24*7';
-}
+slogan: string = " Quality is our Guarantee";
+//source: string = "assets/wearables.jpg" ;
+//sloganf(){
+  //return'24*7';
+//}
 }

@@ -4,6 +4,13 @@
     padding: 0px 00px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
     
+    
+}
+
+.active{
+    background-color: grey;
+}
+body{
+    background-color:#9581dd ; 
 }

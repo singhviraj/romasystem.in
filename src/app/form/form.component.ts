@@ -26,7 +26,8 @@ let respone =await emailjs.send("service_9axa3hk","template_kj1a0cj",{
   message: this.message,
   from_id: "gviraj347@gmail.com",
   });
-
+ console.log("submitted");
+ 
 formdata.reset();
 //async onsubmit(){
  // emailjs.init("8rBqRwH7jBJwVJMYK");

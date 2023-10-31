@@ -5,10 +5,11 @@ import { Directive,OnInit,ElementRef ,Renderer2} from '@angular/core';
 })
 export class BackgroundDirective implements OnInit{
   
+  imageurl :string='assets/leftarrow.webp';
 constructor(private ele:ElementRef ,private renderer :Renderer2){}
 
 ngOnInit(){
-this.renderer.setStyle(this.ele.nativeElement,'backgroundColor','wheat');
+this.renderer.setStyle(this.ele.nativeElement,'background','wheat');
 
 
 }

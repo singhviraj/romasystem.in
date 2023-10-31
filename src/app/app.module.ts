@@ -20,12 +20,18 @@ import { FlipDirective } from './flip.directive';
 import { IfDirective } from './if.directive';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { FormComponent } from './form/form.component';
+import { CommonModule } from '@angular/common';
+import { GoogleMapsModule } from '@angular/google-maps'
+import { GooglemapComponent } from './googlemap/googlemap.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 const approute: Routes=[
-  
+  {path:'',component:HeaderComponent},
+  {path:'Home',component:HeaderComponent},
   {path:'Products',component:ProductsComponent},
-  {path:'Productdetails/:id',component:ProductdetailsComponent},
+  {path:'About',component:AboutComponent},
+  {path:'Contact',component:FormComponent},
 ]
 
 @NgModule({
@@ -46,10 +52,16 @@ const approute: Routes=[
     IfDirective,
     ProductdetailsComponent,
     FormComponent,
-
-  ],
+   GooglemapComponent,
+   
+   
+  
+    ],
+  
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot(approute),ReactiveFormsModule
+    BrowserModule,FormsModule,RouterModule.forRoot(approute),ReactiveFormsModule,GoogleMapsModule
+       
+    
   ],
     
   providers: [],

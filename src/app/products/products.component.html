@@ -1,3 +1,6 @@
+
+
+
 <app-filter [total] ='gettotalproducts()'
 [avail] ='getavailableproducts()'
 [unavail] ='getnonavailableproducts()' 
@@ -11,17 +14,19 @@
     </div>
 </app-search>
 
-<div >
- <div style ="float:left" class="scroll">
+<div > <!--<div style ="float:left ">-->
+ 
+    <div>
     <div *ngFor ="let p of products;let i = index">
      <div *ngIf="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)"> 
          <div *ngIf="filter.selectedradiobutton === 'All'  ||  filter.selectedradiobutton === p.available">
-            {{i}}
-            <div class = "product-container" [ngStyle] ="{backgroundColor: p.available === 'Available' ? 'lightpink' :'orange'}">
+        
+            <!--<div class = "product-container" [ngStyle] ="{backgroundColor: p.available === 'Available' ? 'lightpink' :'orange'}">-->
+                <div class = "product-container" >
                 <div class ="image-container"><img [src]="p.image" style ="max-height:50px; max-width: 50px"></div>
         <div>
         
-        <div class="name-container"><h5>{{p.name}}</h5></div>
+        <div class="name-container" ><h5>{{p.name}}</h5></div>
         <div class="detailcontainer">
             <div class="details" [ngStyle] ="{color:p.available ===  'Available' ? 'blue' :'red'}"> {{p.available}}</div>
             <div class="details" > Price: {{p.price}}</div>
@@ -29,24 +34,44 @@
         </div>
         </div>
         
-        <div class="options">
-            <button class="btn btn-success"> show details</button>
-           
-            <button class="btn btn-warning" *ngIf="p.available ==='Available'; else notify"
-            [routerLink]="['/Productdetails',p.id]">buy now</button>
+        <div class="options" >
+        <input class="btn btn-success" type="button"  value="Show details" (click)='showappnotification($event)' 
+        [placeholder]="p.name">
+        <input class="btn btn-success" type="button"  value="Hide details" (click)='donotshowappnotification($event)' 
+        [placeholder]="p.name">
+         <!-- <button class="btn btn-success"  (click) ='showappnotification()'>
+                 show details</button>
+                
+                [ngModel] ="selectedname"-->  
+
+             <!-- <div *ngIf="shownotification === true && p.name === selectedname">
+                    <app-notification ></app-notification>            
+                </div> -->  
+
+        <!-- <button class="btn btn-warning" *ngIf="p.available ==='Available'; else notify"
+            >buy now</button>
                      
             <ng-template #notify>
                 <button class="btn btn-warning"> notify</button>
-            </ng-template>
+            </ng-template>-->  
+          
         </div>
         </div>
            
     </div>
+
+     <div *ngIf=" shownotification === true && p.name === selectedname">
+       <!--<app-notification [notification] = p.color ></app-notification> -->  
+       <h3>{{p.name}}</h3> 
+       
+     </div>
+          
+    
     </div>
     </div>
     </div>
     
-    <div class="somespace"> 
+    <!--<div class="somespace"> 
         <input type="button" (click) ="showimageproduct()" value="click me to check the latest products"> 
     </div>
     <div *appIf="showimageproductvalue">
@@ -57,9 +82,9 @@
              <img src="assets/smartring.webp"  style="height:500px;width:500px">
          </div>
     </div>
+    -->
     
     
 
 
-  
    

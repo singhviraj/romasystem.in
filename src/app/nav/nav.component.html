@@ -1,32 +1,50 @@
-
-
-<div class="navbar" >
+<!--
+    <div class="navbar" >
     <div class="site-name">
     <h2>
      Healthtrack
     </h2>
 </div>
 <div class="site-menu">
-    <!--
-<a href="">Home</a>
-<a href="">About</a>
-<a href="">Contacts</a>
-<a href="">Cart</a>
-<a href="">Products</a>-->
+   
 <h5 appMouseover>kindly click twice to see about section</h5>
 <button >Home</button>
 <button >Contacts</button>
 <button (click) ='navigatetoproducts()'>Products</button>
-<!--<a routerLink="/Products">Products</a>-->
 <button (click) ='aboutus()'>About</button>
 </div>
 </div>
+-->
+
+
+
+
+
 
 <!--<app-about #about >
 
 </app-about>-->
+  
 
 
-   
-    
 
+<header class="header">
+<div class="logo">
+    <a href="#">
+        <img src="assets/romasys.jpeg" alt="" height="70px" width="100px">
+    </a>
+</div>
+
+<div class="navigation">
+
+    <input type="checkbox" class="toggle-menu">
+    <div class="hamburger"></div>
+    <ul class="menu">
+ <li [routerLinkActive] ="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+ <li [routerLinkActive] ="'active'"><a routerLink="/About">About</a></li>
+ <li [routerLinkActive] ="'active'"><a routerLink="/Products">Products</a></li>
+ <li [routerLinkActive] ="'active'"><a routerLink="/Contact">Contact</a></li>
+    </ul>
+
+</div>
+</header>

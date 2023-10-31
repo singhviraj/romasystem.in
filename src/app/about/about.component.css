@@ -13,3 +13,101 @@ h4{
     display:flex;
      opacity: 1.0; 
 }
+
+
+
+
+
+.mainimage img{
+    height: 100%;
+    width: 100%;
+}
+
+.displayleft{
+        border: 2px solid black;
+        }
+
+.displayright{
+    border: 2px solid black;
+    margin-left: 30px;
+}
+
+@media (max-width :600px){
+    .displayleft img {
+        height: 150px;
+        width: 150px;
+          }
+}
+
+@media(min-width : 600px){
+    .mainposition{
+        display: flex;
+    }
+
+    .displayleft img {
+        height: 400px;
+        width: 400px;
+          }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width : 600px){
+    .container{
+    
+        width: 100%;
+        margin-top: 40%;
+        margin-left: 50%;
+        margin-bottom: -40%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+       
+    }
+}
+.container{
+    width: 60%;
+    margin-top: 23%;
+    margin-left: 50%;
+   
+   margin-bottom: -25%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+   
+}
+.wrapper{
+
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    
+    
+}
+.container img{
+    width: 100%;
+}
