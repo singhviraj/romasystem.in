@@ -18,12 +18,10 @@ import { MouseoverDirective } from './mouseover.directive';
 import { ClassDirective } from './class.directive';
 import { FlipDirective } from './flip.directive';
 import { IfDirective } from './if.directive';
-import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { FormComponent } from './form/form.component';
 import { CommonModule } from '@angular/common';
-import { GoogleMapsModule } from '@angular/google-maps'
-import { GooglemapComponent } from './googlemap/googlemap.component';
-import { AgmCoreModule } from '@agm/core';
+
+
 
 
 const approute: Routes=[
@@ -50,16 +48,14 @@ const approute: Routes=[
     ClassDirective,
     FlipDirective,
     IfDirective,
-    ProductdetailsComponent,
     FormComponent,
-   GooglemapComponent,
    
    
   
     ],
   
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot(approute),ReactiveFormsModule,GoogleMapsModule
+    BrowserModule,FormsModule,ReactiveFormsModule,RouterModule.forRoot(approute),
        
     
   ],
