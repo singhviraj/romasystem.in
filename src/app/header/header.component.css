@@ -111,6 +111,7 @@ opacity: 1;
        
     }
 }
+
 .container{
     width: 60%;
     margin-left: 50%;
@@ -122,7 +123,7 @@ opacity: 1;
    
 }
 .wrapper{
-    
+   
     display: flex ;
     animation: slide 10s infinite;
     
@@ -149,6 +150,6 @@ opacity: 1;
     
 }
 
-  img{
+  .wrapper img{
    width: 100%;
 }
