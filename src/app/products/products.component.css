@@ -1,19 +1,24 @@
 .product-container{
-    display: flex;
-    margin:15px 0px;
+    /*display: flex;
+    margin:15px 0px;*/
     padding: 5px 5px;
     border-radius:5px;
-   
+   margin-left: 40px;
 }
+
 
 .image-container{
     height:70px;
     width:70px;
     padding:10px 10px;
+    margin-left: 10px;
+    margin-bottom: 150px;
+    margin-top: 50px;
 }
 
 .detailcontainer{
     margin:0px 20px;
+    
 }
 .name-container{
     margin:0px 20px;
@@ -25,7 +30,8 @@ width:140px
 
 .option{
     width:220px;
-    margin-left:80px
+    margin-left:80px;
+    
 
 }
 
@@ -41,6 +47,10 @@ width:140px
         display:flex; 
          margin:0px 20px;
      }
+
+     .laptopview{
+        display:flex;
+    }
 }
 
 input[type=button]{

@@ -103,7 +103,9 @@ h4{
     50%{
         transform: translateX(-100%);
     }
-    
+    70%{
+        transform: translateX(-200%);
+    }
     
 }
 .container img{
