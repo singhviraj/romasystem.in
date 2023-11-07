@@ -73,7 +73,7 @@ h4{
     }
 }
 .container{
-    width: 60%;
+   width: 60%;
     margin-top: 23%;
     margin-left: 50%;
    
@@ -84,7 +84,7 @@ h4{
    
 }
 .wrapper{
-
+    
     width: 100%;
     display: flex;
     animation: slide 10s infinite;

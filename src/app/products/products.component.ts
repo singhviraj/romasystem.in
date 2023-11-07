@@ -37,10 +37,13 @@ export class ProductsComponent {
     this.shownotification =false;
   }
 products =[
-  {id:1 ,name:"google lens" ,price:'1109rs' ,color:"black",available:'Available', image:'assets/Googlelens.jpg'},
-  {id:2 ,name:"smart watch" ,price:'3456rs' ,color:"white",available:'Available', image:'assets/smartwatch.jpg'},
-  {id:3 ,name:"smart glases" ,price:'8889rs' ,color:"black",available:'Not Available', image:'assets/smartglases.webp'},
-  {id:4 ,name:"activity tracer" ,price:'9999rs' ,color:"white",available:'Available', image:'assets/activity tracer.webp'}
+  // {id:4 ,name:"activity tracer" ,price:'9999rs' ,color:"white",available:'Available', image:'assets/activity tracer.webp'}
+  {id:1 ,name:"Alexa" ,colorone:"Smoke Brown",colortwo:"Ivory",available:'Available', image:'assets/Alexa.jpg',descriptionone:'Copper winding',descriptiontwo:'Energy saver',descriptionthree:'2 years motor guarantee',descriptionfour:'Anti-dust'},
+  {id:2 ,name:"Bliss" ,colorone:"Smoke Brown",colortwo:"Plum wine", available:'Available', image:'assets/Bliss.jpg', descriptionone:'Copper winding',descriptiontwo:'GP blade technology',descriptionthree:'Energy saver',descriptionfour:'2 years motor guarantee'},
+  {id:3 ,name:"Imperial" ,colorone:"Smoke Brown",colortwo:"Ivory",available:'Available', image:'assets/Imperial.jpg' , descriptionone:'Copper winding',descriptiontwo:'Energy saver',descriptionthree:'2 years motor guarantee',descriptionfour:'Anti-dust'},
+  {id:4 ,name:"Sapphire" ,colorone:"Smoke Brown",colortwo:"Ivory",available:'Available', image:'assets/Sapphire.jpg', descriptionone:'Copper winding',descriptiontwo:'Energy saver',descriptionthree:'GP blade technology',descriptionfour:'2 years motor guarantee'},
+  {id:5 ,name:"Star" ,colorone:"Smoke Brown",colortwo:"Plum wine",available:'Available', image:'assets/Star.jpg' , descriptionone:'Copper winding',descriptiontwo:'Energy saver',descriptionthree:'GP blade technology',descriptionfour:'2 years motor guarantee'},
+  {id:6 ,name:"Turbo+" ,colorone:"Smoke Brown",colortwo:"Ivory",available:'Available', image:'assets/Turbo+.jpg' , descriptionone:'Copper winding',descriptiontwo:'Energy saver',descriptionthree:'2 years motor guarantee',descriptionfour:'Anti-dust'}
 ]
 
 gettotalproducts(){

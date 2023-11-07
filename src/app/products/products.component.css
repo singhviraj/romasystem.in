@@ -6,6 +6,17 @@
    margin-left: 40px;
 }
 
+ul.a {
+    list-style-type: square;
+    margin-left: 25px
+  }
+  ul.b {
+    list-style-type: square;
+    margin-left: 65px
+  }  
+  .colorposition{
+    display: flex;
+  }
 
 .image-container{
     height:70px;

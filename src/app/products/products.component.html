@@ -28,11 +28,23 @@
         <div class="laptopview">
                 <div >
         
-        <div class="name-container" ><h5>{{p.name}}</h5></div>
+        <div class="name-container" ><h1>{{p.name}}</h1></div>
         <div class="detailcontainer">
             <div class="details" [ngStyle] ="{color:p.available ===  'Available' ? 'blue' :'red'}"> {{p.available}}</div>
-            <div class="details" > Price: {{p.price}}</div>
-            <div class="details" > Color:{{p.color}}</div>
+          <!--  <div class="details" > Price: {{p.price}}</div>
+          <div class="details" > Color:{{p.color}}</div>-->
+         <div class="colorposition">
+            <div>Color:</div> 
+            <div class="details"> 
+                <ul class="a">
+                 <li>{{p.colorone}}</li>
+                 <li>{{p.colortwo}}</li>
+                 </ul>
+            </div>
+         </div>
+         
+
+
         </div>
         </div>
         
@@ -64,7 +76,12 @@
 
      <div *ngIf=" shownotification === true && p.name === selectedname">
        <!--<app-notification [notification] = p.color ></app-notification> -->  
-       <h3>{{p.name}}</h3> 
+       <ul class="b">
+        <li>{{p.descriptionone}}</li>
+        <li>{{p.descriptiontwo}}</li>
+        <li>{{p.descriptionthree}}</li>
+        <li>{{p.descriptionfour}}</li>
+        </ul> 
        
      </div>
           

@@ -14,17 +14,20 @@
     <button type="submit" value="submit">click me</button>
 
     </form>-->
+    <div class="mapclass">
+        <img src="assets/romamap.jpg" >
+    </div>
     <div class="contactslogo">
         <img src="assets/emaillogo.jpg" style ="height:200px; width: 200px">
         <div class=" logocontent"><h2>customercare@romasystem.in</h2></div>
       </div>
       <div class="contactslogo">
         <img src="assets/tollfreelogo.jpg" style ="height:200px; width: 200px">
-        <div class=" logocontent"> <h2>18003093433</h2></div> 
+        <div class=" logocontent"> <h2>1800-309-3433</h2></div> 
       </div>
     
 
-    <div *ngIf="showformstatus" style="color: rgb(138, 138, 77);">
+    <div *ngIf="showformstatus" style="color: #4527a0;">
         <h2>Form Submitted successfully</h2>
     </div>
 
@@ -37,19 +40,19 @@
         
             <label for="firstname">Name: </label>
             <br>
-    <input type="text" name="firstname" ngModel required #fname="ngModel">
+    <input type="text" name="firstname" [(ngModel)]="customername" required #fname="ngModel">
      
     <br>
-    <label for="email">Email: </label>
+    <label for="email">E-mail: </label>
     <br>
-    <input type="email" name="email" ngModel required #ename="ngModel">
+    <input type="email" name="email" [(ngModel)]="customeremail" required email #ename="ngModel">
    
     <br>
     <label for="contacttype"> Choose the following</label>
     <br>
     <input type="radio" value="customercare" name="contacttype" [(ngModel)]="selectedchoice" required>
     <label for="customercare"> Customer Care</label>
-    <input type="radio" value="partner" name="contacttype" [(ngModel)]="selectedchoice" required>
+    <input type="radio" value="partner" name="contacttype" [(ngModel)]="selectedchoice" required style="margin-left: 40px;">
     <label for="partner"> Partner</label>
     <br>
 
@@ -75,7 +78,7 @@
 <button type="submit" value="submit" [disabled]="!myform.valid">click me</button>-->
     
 <br>
-<button type="submit" value="submit" [disabled]="!myform.valid">click me</button>
+<button type="submit" value="submit" [disabled]="!myform.valid">Submit</button>
     
     </form>
 </div>
