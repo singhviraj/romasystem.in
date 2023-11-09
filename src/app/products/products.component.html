@@ -18,7 +18,7 @@
  
     <div>
     <div *ngFor ="let p of products;let i = index">
-     <div *ngIf="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)"> 
+     <div *ngIf="searchtext === ''  ||  p.name.toUpperCase().includes(searchtext)"> 
          <div *ngIf="filter.selectedradiobutton === 'All'  ||  filter.selectedradiobutton === p.available">
         
             <!--<div class = "product-container" [ngStyle] ="{backgroundColor: p.available === 'Available' ? 'lightpink' :'orange'}">-->
@@ -37,8 +37,15 @@
             <div>Color:</div> 
             <div class="details"> 
                 <ul class="a">
-                 <li>{{p.colorone}}</li>
-                 <li>{{p.colortwo}}</li>
+                 <!--<div *ngIf="p.colorone === 'Smoke Brown'"></div>
+                    <div *ngIf="p.colorone === 'Ivory'"></div>
+                    <div *ngIf="p.colorone === 'Plum Wine'"></div>-->   
+                 <li *ngIf="p.colorone === 'Smoke Brown'" [ngStyle] ="{color:'brown'}">Smoke Brown</li>
+                 <li *ngIf="p.colorone === 'Ivory'" [ngStyle] ="{color:'Ivory'}">Ivory</li>
+                 <li *ngIf="p.colorone === 'Plum wine'" [ngStyle] ="{color:'violet'}">Plum Wine</li>
+                 <li *ngIf="p.colortwo === 'Smoke Brown'" [ngStyle] ="{color:'brown'}">Smoke Brown</li>
+                 <li *ngIf="p.colortwo === 'Ivory'" [ngStyle] ="{color:'Ivory'}">Ivory</li>
+                 <li *ngIf="p.colortwo === 'Plum wine'" [ngStyle] ="{color:'violet'}">Plum Wine</li>
                  </ul>
             </div>
          </div>
